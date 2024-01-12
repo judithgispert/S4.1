@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
-public class HelloWordController {
+public class HelloWordController { 
     @GetMapping("/HelloWord")
     public String greet(@RequestParam(defaultValue = "UNKNOWN") String name){
         return "Hello, " + name + ". You're running a Maven project.";
