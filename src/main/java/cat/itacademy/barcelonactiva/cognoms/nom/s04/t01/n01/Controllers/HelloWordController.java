@@ -1,10 +1,12 @@
-package Controllers;
+package cat.itacademy.barcelonactiva.cognoms.nom.s04.t01.n01.Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-public class HelloWordController { 
+@RestController
+public class HelloWordController {
     @GetMapping("/HelloWord")
     public String greet(@RequestParam(defaultValue = "UNKNOWN") String name){
         return "Hello, " + name + ". You're running a Maven project.";
